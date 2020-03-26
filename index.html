@@ -20,17 +20,19 @@
     </head>
     <body>
         <div id="app">
-            <div class="b-title-bar">
-                <div class="b-virus">
-                    <img src="./virus-ring.svg" class="e-virus-ring" alt="Covid-19" />
-                    <img src="./virus-face.svg" class="e-virus-face" alt="Covid-19" />
+            <div>
+                <div class="b-title-bar">
+                    <div class="b-virus">
+                        <img src="./virus-ring.svg" class="e-virus-ring" alt="Covid-19" />
+                        <img src="./virus-face.svg" class="e-virus-face" alt="Covid-19" />
+                    </div>
+                    <div class="b-lockdown-title">Covid-19<br /> <strong>Lockdown</strong></div>
                 </div>
-                <div class="b-lockdown-title">Covid-19<br /> <strong>Lockdown</strong></div>
+                <timer-item v-bind:text="days" v-bind:desc="'days'"></timer-item>
+                <timer-item v-bind:text="hours" v-bind:desc="'hrs'"></timer-item>
+                <timer-item v-bind:text="minutes" v-bind:desc="'mins'"></timer-item>
+                <timer-item v-bind:text="seconds" v-bind:desc="'sec'"></timer-item>
             </div>
-            <timer-item v-bind:text="days" v-bind:desc="'days'"></timer-item>
-            <timer-item v-bind:text="hours" v-bind:desc="'hrs'"></timer-item>
-            <timer-item v-bind:text="minutes" v-bind:desc="'mins'"></timer-item>
-            <timer-item v-bind:text="seconds" v-bind:desc="'sec'"></timer-item>
         </div>
         <script src="./js/vue.js"></script>
         <script src="./js/moment.min.js"></script>

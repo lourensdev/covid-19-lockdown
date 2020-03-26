@@ -11,12 +11,20 @@ body {
   background: rgb(80, 174, 254);
   background: linear-gradient(153deg, rgba(80, 174, 254, 1) 0%, rgba(60, 88, 255, 1) 100%);
   color: #fff;
-  display: flex;
-  align-items: center;
 }
 
 #app {
-  padding: 50px;
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  #app {
+    padding: 50px;
+  }
 }
 
 @keyframes vring {
