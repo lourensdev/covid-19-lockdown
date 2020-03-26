@@ -83,8 +83,15 @@ body {
 }
 
 .b-timer-item {
-  font-size: 100px;
-  line-height: 100px;
+  font-size: 78px;
+  line-height: 78px;
+}
+
+@media (min-width: 600px) {
+  .b-timer-item {
+    font-size: 100px;
+    line-height: 100px;
+  }
 }
 
 .b-timer-item .e-timer-value {
