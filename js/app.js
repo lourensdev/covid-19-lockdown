@@ -4,7 +4,7 @@ Vue.component("timer-item", {
 });
 
 function getCountdown() {
-  return moment().countdown("2020-4-17");
+  return moment().countdown("2020-4-30");
 }
 
 function padTime(time) {
